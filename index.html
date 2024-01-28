@@ -4,8 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadoo</title>
+    <!-- Tailwind and Daisy uI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+<!-- Custom Class -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Css style link -->
+  <style>
+   .font-Poppins{
+    font-family: 'Poppins', sans-serif;
+   }
+   .font-volkhov{
+    font-family: 'Volkhov', serif;
+   }
+
+  </style>
+
 </head>
-<body>
+
+<body class="font-Poppins">
+    <header>
+       
+    <nav>
+      <div class="navbar bg-base-100 mb-24">
+        <div class="navbar ">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <ul>
+                <li><a>Destinations</a></li>
+                <li><a>Hotels</a></li>
+                <li><a>Flights</a></li>
+                <li><a>Bookings</a></li>
+                
+              </ul>
+          </div>
+          <a class=""><img class="w-24" src="assetes/logo1.png" alt=""></a>
+        </div>
+        <div class="navbar-center hidden  lg:flex">
+          <ul class="menu menu-horizontal text-gray-500 text-[1rem] gap-10">
+            <li><a>Destinations</a></li>
+            <li><a>Hotels</a></li>
+            <li><a>Flights</a></li>
+            <li><a>Bookings</a></li>
+            
+          </ul>
+        </div>
+        <div class="mx-20 gap-9 hidden lg:flex ">
+          <a class="btn bg-orange-400 text-white font-bold  px-7">Login</a>
+          <a class="btn  font-bold text-[1rem] border-2 border-black bg-orange-400 text-white px-7">Sign up</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner  section -->
+    <div class="container my-24  mx-auto">
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="./assetes/Traveller1.png" class="rounded-lg " />
+          <div>
+            <h1 class="text-xl uppercase text-[#DF6951] font-bold mb-6">Best Destinations around the world</h1>
+            <h1 class="text-7xl font-volkhov  font-bold w-[545px] mb-7">Travel, enjoy  and live a new and full life</h1>
+            <p class="py-6">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+           <div class="flex gap-7 ">
+            <button class="btn bg-[#F1A501] text-white">Find out more</button>
+            <button class="flex ">
+              <img class="h-24" src="./assetes/Play button.svg" alt="">
+             Play Demo
+           
+            </button>
+           </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </header>
+    <main>
+      <!-- services section -->
+      <div class="container text-center mx-auto">
+        <h1 class="text-[1rem] text-[#5E6282] font-semibold">CATEGORY</h1>
+        <p class="text-[3.125rem] font-volkhov font-bold">We Offer Best Services</p>
+           <!-- services card -->
+
+          <div class="flex justify-between">
+            <div class="card w-[267px] h-[315px] bg-base-100 shadow-sm ro">
+              <figure class="px-10 pt-10">
+                <img src="./assetes/Group 48.svg" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-xl text-[#1E1D4C] font-semibold mb-4">Calculated Weather </h2>
+                <p class="text-[1rem]">Built Wicket longer admire do barton vanity itself do in it.</p>
+              </div>
+            </div>
+            <!-- services card 2 -->
+            
+            <div class="card w-[267px] h-[315px] bg-base-100 shadow-sm ro">
+              <figure class="px-10 pt-10">
+                <img src="./assetes/Group 51.svg" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-xl text-[#1E1D4C] font-semibold mb-4">Best Flights </h2>
+                <p class="text-[1rem]">Engrossed listening. Park gate sell they west hard for the.</p>
+              </div>
+            </div>
+  <!-- services card 3 -->
+            <div class="card w-[267px] h-[315px] bg-base-100 shadow-sm ro">
+              <figure class="px-10 pt-10">
+                <img src="./assetes/image 25.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-xl text-[#1E1D4C] font-semibold mb-4">CLocal Events </h2>
+                <p class="text-[1rem]">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+              </div>
+            </div>
+  <!-- services card 4 -->
+            <div class="card w-[267px] h-[315px] bg-base-100 shadow-sm ro">
+              <figure class="px-10 pt-10">
+                <img src="./assetes/Group 49.svg" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-xl text-[#1E1D4C] font-semibold mb-4">Customization</h2>
+                <p class="text-[1rem]">We deliver outsourced
+                  aviation services for
+                  military customers</p>
+              </div>
+            </div>
+
+
+          </div>
+
+      </div>
+
+
+
+    </main>
+    <footer>
+
+
+    </footer>
     
+
+
+
 </body>
 </html>
